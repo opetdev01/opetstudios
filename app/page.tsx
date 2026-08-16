@@ -23,8 +23,8 @@ export default async function Home() {
     console.error("Error fetching from Sanity:", error);
   }
 
-  const projects = sanityProjects?.length > 0 ? sanityProjects : mockProjects;
-  const services = sanityServices?.length > 0 ? [...sanityServices, ...mockServicesList] : mockServicesList;
+  const projects = mockProjects;
+  const services = mockServicesList;
 
   return (
     <main className="min-h-screen bg-black text-white flex flex-col">
