@@ -270,13 +270,6 @@ export const maps: MapItem[] = [
         thumbnail: "/zomra-cover.png"
     },
     {
-        id: "sahara-city",
-        title: "Sahara City",
-        description: "Expansive desert-scale masterplan and residential layout.",
-        url: "https://factoriesmap.opetstudios.com/",
-        thumbnail: "/sahara-cover.png"
-    },
-    {
         id: "majarah-compound",
         title: "Majarah Compound",
         description: "Modern gated community layout and architectural design.",
