@@ -48,7 +48,7 @@ export function HomeCRM() {
                                     className="relative w-32 h-16 md:w-40 md:h-20 flex-shrink-0 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 group cursor-default"
                                 >
                                     <img
-                                        src={`/crm's 1/${img}`}
+                                        src={`/crms/${img}`}
                                         alt={`CRM Integration ${i + 1}`}
                                         className="w-full h-full object-contain"
                                         loading="lazy"

@@ -2,7 +2,7 @@ export interface Service {
     id: string;
     title: string;
     subtitle: string;
-    mainText: string; // HTML/Rich text for the main description
+    mainText: string;
     features: {
         title: string;
         description: string;
@@ -12,69 +12,82 @@ export interface Service {
 
 export const servicesList: Service[] = [
     {
-        id: "essential",
-        title: "ESSENTIAL",
-        subtitle: "Establish dominance with a robust digital presence.",
-        mainText: "Designed for agile projects or developers looking to establish a strong, modern online sales foundation.",
+        id: "lens",
+        title: "OPET LENS",
+        subtitle: "Creative Direction & Visualization",
+        mainText: "Visualizing architecture projects doesn't stop at still images. To truly <span class='text-white font-bold'>capture</span> the <span class='text-white font-bold'>feel</span> of the <span class='text-white font-bold'>masses</span>, the <span class='text-white font-bold'>experience</span> within the <span class='text-white font-bold'>spaces</span>, & <span class='text-white font-bold'>visually communicate</span> your <span class='text-white font-bold'>project</span>, you got to bring in professional <span class='text-white font-bold'>video production</span> into the mix, with <span class='text-white font-bold'>OPET</span> Lens.",
         features: [
             {
-                title: "Web Sales App",
-                description: "The complete Online Interactive Sales Solution."
+                title: "Story boards",
+                description: "Building a visual narrative for the project, its design process, structuring the video timeline, synchronized with audio, to unfold the story behind it."
             },
             {
-                title: "5 Hero Renders",
-                description: "Premium Archviz stills to populate the app and marketing channels."
+                title: "An arsenal of 3D softwares",
+                description: "From video renders, to camera compositions, carefully selected materials & textures, adjusting lighting & environment, incorporating secondary visual assets into the mix to accentuate the selling points of the project & bring it to life."
+            },
+            {
+                title: "Montage & post production",
+                description: "Orchestrating all of it. Carefully composing the material produced, applying final tweaks in color grading & layers of effects and adjustments, along with underlaying soundeffects, to produce a cinematic work of art that suits your project & facilitate a smooth showcase of it."
             }
         ],
-        icon: "monitor"
+        icon: "lens"
     },
     {
-        id: "showroom-experience",
-        title: "SHOWROOM EXPERIENCE",
-        subtitle: "Bring the digital into the physical world.",
-        mainText: "Designed for major developments utilizing a physical sales center, providing agents with the ultimate closing tools.",
+        id: "dive",
+        title: "OPET DIVE",
+        subtitle: "Immersive Experiences",
+        mainText: "With rapid advancements in the realm of <span class='text-white font-bold'>Augmented</span> & <span class='text-white font-bold'>Virtual Reality</span>, AR & <span class='text-white font-bold'>VR</span>, projects of all different scopes can definitley tap into its potential, giving users a <span class='text-white font-bold'>hands on immersive experience</span> & benefit from various unique features that this technology provides, with <span class='text-white font-bold'>OPET</span> Dive.",
         features: [
             {
-                title: "Everything in Tier 1",
-                description: "(Web Sales App)."
+                title: "Hands-on interactivity",
+                description: "Walk inside your unbuilt spaces in 1:1 real-world scale, interact with finishes, adjust dynamic lighting, and feel the atmosphere prior to construction."
             },
             {
-                title: "Offline Interactive Showroom Solution",
-                description: "Custom software/hardware setup for the sales center."
-            },
-            {
-                title: "10 Hero Renders",
-                description: "(5 additional shots added to the Tier 1 package) for comprehensive visual coverage."
+                title: "Spatial Presence",
+                description: "Engineered specifically for cutting-edge VR headsets and standalone AR glasses to deliver frictionless customer engagement."
             }
         ],
-        icon: "harddrive"
+        icon: "dive"
     },
     {
-        id: "ultimate-immersion",
-        title: "ULTIMATE IMMERSION",
-        subtitle: "The peak of the interactive sales ecosystem.",
-        mainText: "Designed for flagship, luxury, or mega-developments requiring the absolute highest level of emotional engagement and cutting-edge reality technology.",
+        id: "realm",
+        title: "OPET REALM",
+        subtitle: "Interactive 3D Virtual Worlds",
+        mainText: "Step into your masterplans before ground is broken. <span class='text-white font-bold'>OPET REALM</span> crafts real-time interactive 3D virtual worlds powered by Unreal Engine 5 with photorealistic shaders, daylight simulation, and live unit selection.",
         features: [
             {
-                title: "Everything in Tier 1 & 2",
-                description: "(Web App + Offline Showroom + 10 Hero Renders)."
+                title: "Real-time Exploration",
+                description: "Unrestricted free-roam navigation across expansive architectural masterplans with instant unit availability filtering."
             },
             {
-                title: "Cinematic Animation",
-                description: "Up to 2 minutes of narrative-driven architectural video."
-            },
-            {
-                title: "XR Experience Integration",
-                description: "Custom AR and VR experiences fully integrated into the sales flow."
+                title: "Dynamic Atmosphere",
+                description: "Simulate exact geographic daylight, weather transitions, and realistic sunset views from any specific balcony or penthouse."
             }
         ],
-        icon: "glasses"
+        icon: "realm"
+    },
+    {
+        id: "pulse",
+        title: "OPET PULSE",
+        subtitle: "Cloud-Streamed Visual Experiences",
+        mainText: "Instant, zero-install 3D streaming directly in the browser on any device. <span class='text-white font-bold'>OPET PULSE</span> delivers high-fidelity architectural visualizations via ultra-low latency pixel streaming.",
+        features: [
+            {
+                title: "Zero Downloads",
+                description: "High-end Unreal Engine graphical fidelity streamed seamlessly to mobile browsers, tablets, and desktops over 5G & broadband."
+            },
+            {
+                title: "Sales Enablement",
+                description: "Seamlessly integrate interactive unit tours into your sales presentations, CRM workflows, and live buyer consultations."
+            }
+        ],
+        icon: "pulse"
     }
 ];
 
 export interface Project {
     id: string;
-    serviceId: string; // Link to Service
+    serviceId: string;
     displayTitle: string;
     title: string;
     category: string;
@@ -101,15 +114,15 @@ export const projects: Project[] = [
         year: "2025",
         location: "Regional",
         area: "Master Plan",
-        image: "/archviz and showcases/Sohob competition/arial 1_upscale01.png",
+        image: "/showcases/sohob/close-1_upscale01.png",
         description: "A project that drifts down from the serenity of the sky, forming like a cloud that hovers softly above — not just to cast shade, but to whisper light, to glow with presence, and to leave behind a delicate trace in memory.\n\nSohob is a calm, cloud-inspired residential space where architecture flows gently with light and wind. Designed for families, it blends privacy with connection offering shaded paths, shared gardens, and a soft sense of belonging.",
         gallery: [
-            "/archviz and showcases/Sohob competition/arial 1_upscale01.png",
-            "/archviz and showcases/Sohob competition/2_style_transfer02.png",
-            "/archviz and showcases/Sohob competition/Form 3_upscale01.png",
-            "/archviz and showcases/Sohob competition/Form 5_upscale01.png",
-            "/archviz and showcases/Sohob competition/close 1_upscale01.png",
-            "/archviz and showcases/Sohob competition/close 2_upscale01.png"
+            "/showcases/sohob/close-1_upscale01.png",
+            "/showcases/sohob/2_style_transfer02.png",
+            "/showcases/sohob/arial-1_upscale01.png",
+            "/showcases/sohob/close-2_upscale01.png",
+            "/showcases/sohob/Form-3_upscale01.png",
+            "/showcases/sohob/Form-5_upscale01.png"
         ],
         timeline: []
     },
@@ -122,13 +135,13 @@ export const projects: Project[] = [
         year: "2024",
         location: "Al-Madinah, Saudi Arabia",
         area: "Tower Development",
-        image: "/archviz and showcases/osoul/Slide27-scaled.webp",
+        image: "/showcases/osoul/Slide27-scaled.webp",
         description: "In a land such as Al-Madinah Al-Munawwarah, architecture is drawn forth from the soil like meanings from ancient texts. The project adopts a Tree-Column structural system where majestic trunks emerge from the heart of the land, bridging what lies below with what lies above. Each structure ascends in the spirit of the palm tree—anchored in the soil yet reaching confidently toward the sky, revealing the cultural memory it holds.",
         gallery: [
-            "/archviz and showcases/osoul/Slide27-scaled.webp",
-            "/archviz and showcases/osoul/Slide28-scaled.webp",
-            "/archviz and showcases/osoul/Slide29-scaled.webp",
-            "/archviz and showcases/osoul/Slide31-scaled.webp"
+            "/showcases/osoul/Slide27-scaled.webp",
+            "/showcases/osoul/Slide28-scaled.webp",
+            "/showcases/osoul/Slide29-scaled.webp",
+            "/showcases/osoul/Slide31-scaled.webp"
         ],
         timeline: []
     },
@@ -141,14 +154,14 @@ export const projects: Project[] = [
         year: "2024",
         location: "New Cairo, Egypt",
         area: "378 Acres",
-        image: "/archviz and showcases/zomra/Shot-Aerial-2-scaled.png",
+        image: "/showcases/zomra/Shot-Aerial-2-scaled.png",
         description: "Zomra Compound in Fifth Settlement redefines luxury living with modern architecture and a refined European style. The project stretches across 378 acres, where nature and tranquility take center stage. A large portion of the land is dedicated to green spaces and open landscapes, with a diverse selection of high-end residential units including townhouses and standalone villas.",
         gallery: [
-            "/archviz and showcases/zomra/Shot-Aerial-2-scaled.png",
-            "/archviz and showcases/zomra/Standalone-Villa-2-1024x834.webp",
-            "/archviz and showcases/zomra/Standalone-Villa-3-1024x837.webp",
-            "/archviz and showcases/zomra/Standalone-Villa-3.1-1024x836.webp",
-            "/archviz and showcases/zomra/Townhouse-6-e1750868748108-1024x830.webp"
+            "/showcases/zomra/Shot-Aerial-2-scaled.png",
+            "/showcases/zomra/Standalone-Villa-2-1024x834.webp",
+            "/showcases/zomra/Standalone-Villa-3-1024x837.webp",
+            "/showcases/zomra/Standalone-Villa-3.1-1024x836.webp",
+            "/showcases/zomra/Townhouse-6-e1750868748108-1024x830.webp"
         ],
         timeline: []
     },
@@ -161,17 +174,17 @@ export const projects: Project[] = [
         year: "2025",
         location: "Sahl Hasheesh, Egypt",
         area: "Coastal Resort",
-        image: "/archviz and showcases/red hills/Slide29-1024x585.jpg",
+        image: "/showcases/red-hills/Slide29-1024x585.jpg",
         description: "Red Hills is an exclusive resort-style real estate project on Egypt’s Red Sea coast. Designed with a modern architectural vision, the development offers a harmonious blend of contemporary luxury and coastal beauty. It features a variety of premium residences, from penthouses to chalets, all crafted to provide an elevated lifestyle experience just minutes from pristine beaches.",
         gallery: [
-            "/archviz and showcases/red hills/Slide29-1024x585.jpg",
-            "/archviz and showcases/red hills/Slide30-1024x585.jpg",
-            "/archviz and showcases/red hills/Slide31-1024x585.jpg",
-            "/archviz and showcases/red hills/Slide32-1024x585.jpg",
-            "/archviz and showcases/red hills/Slide4-1024x585.png",
-            "/archviz and showcases/red hills/Slide5-1024x585.png",
-            "/archviz and showcases/red hills/Slide6-1024x585.png",
-            "/archviz and showcases/red hills/Slide8-1024x585.png"
+            "/showcases/red-hills/Slide29-1024x585.jpg",
+            "/showcases/red-hills/Slide30-1024x585.jpg",
+            "/showcases/red-hills/Slide31-1024x585.jpg",
+            "/showcases/red-hills/Slide32-1024x585.jpg",
+            "/showcases/red-hills/Slide4-1024x585.png",
+            "/showcases/red-hills/Slide5-1024x585.png",
+            "/showcases/red-hills/Slide6-1024x585.png",
+            "/showcases/red-hills/Slide8-1024x585.png"
         ],
         timeline: []
     },
@@ -184,13 +197,13 @@ export const projects: Project[] = [
         year: "2024",
         location: "New Capital, Egypt",
         area: "Commercial Hub",
-        image: "/archviz and showcases/nebu/1.jpeg",
+        image: "/showcases/nebu/1.jpeg",
         description: "Nebu, an ancient Egyptian term meaning 'gold', symbolizes wealth, eternity, and divine power. Located in Egypt's New Administrative Capital, this project evokes luxury and timelessness, reflecting deep heritage through its modern architectural language and bead-inspired necklaces patterns.",
         gallery: [
-            "/archviz and showcases/nebu/1.jpeg",
-            "/archviz and showcases/nebu/3.jpeg",
-            "/archviz and showcases/nebu/5.jpeg",
-            "/archviz and showcases/nebu/Slide9-scaled.jpg"
+            "/showcases/nebu/1.jpeg",
+            "/showcases/nebu/3.jpeg",
+            "/showcases/nebu/5.jpeg",
+            "/showcases/nebu/Slide9-scaled.jpg"
         ],
         timeline: []
     },
@@ -203,18 +216,18 @@ export const projects: Project[] = [
         year: "2025",
         location: "Vietnam",
         area: "Data Center Hub",
-        image: "/archviz and showcases/camlam/cover.png",
+        image: "/showcases/camlam/cover.png",
         description: "The Vingroup Chip City embodies a cutting-edge urban and architectural vision inspired by the structure and functionality of a microchip. This vision reflects innovation, interconnectivity, and efficiency, aligning with the city’s role as a global data center hub.\n\nThe Chip Shape and Connectivity vision transforms the Vingroup Chip City into a futuristic metropolis where architecture and urban planning emulate the microchip’s intelligence and efficiency. The city serves as a global benchmark for harmonizing advanced technology with sustainable urban living.",
         gallery: [
-            "/archviz and showcases/camlam/cover.png",
-            "/archviz and showcases/camlam/Picture1.jpg",
-            "/archviz and showcases/camlam/Picture2.jpg",
-            "/archviz and showcases/camlam/Picture3.png",
-            "/archviz and showcases/camlam/Picture4.png",
-            "/archviz and showcases/camlam/Picture5.png",
-            "/archviz and showcases/camlam/Picture6.png",
-            "/archviz and showcases/camlam/Picture7.png",
-            "/archviz and showcases/camlam/Picture8.png"
+            "/showcases/camlam/cover.png",
+            "/showcases/camlam/Picture1.jpg",
+            "/showcases/camlam/Picture2.jpg",
+            "/showcases/camlam/Picture3.png",
+            "/showcases/camlam/Picture4.png",
+            "/showcases/camlam/Picture5.png",
+            "/showcases/camlam/Picture6.png",
+            "/showcases/camlam/Picture7.png",
+            "/showcases/camlam/Picture8.png"
         ],
         timeline: []
     },
@@ -227,13 +240,13 @@ export const projects: Project[] = [
         year: "2025",
         location: "Global",
         area: "Experimental",
-        image: "/archviz and showcases/Ecological hut/Edited 1-gigapixel-text-shapes-4x.png",
+        image: "/showcases/ecological-hut/Edited-1-gigapixel-text-shapes-4x.png",
         description: "An experimental architectural concept focusing on fluid, organic geometry and seamless integration with the natural environment. The project explores sustainable materiality and innovative forms designed to exist in balance with ecological systems.",
         gallery: [
-            "/archviz and showcases/Ecological hut/Edited 1-gigapixel-text-shapes-4x.png",
-            "/archviz and showcases/Ecological hut/2.effectsResult-gigapixel-text-shapes-2x.png",
-            "/archviz and showcases/Ecological hut/Scene 111_upscale01-gigapixel-text-shapes-2x.png",
-            "/archviz and showcases/Ecological hut/bea009a9ba823df435859813b5b9db09xbarp-gigapixel-text-shapes-2x.png"
+            "/showcases/ecological-hut/Edited-1-gigapixel-text-shapes-4x.png",
+            "/showcases/ecological-hut/2.effectsResult-gigapixel-text-shapes-2x.png",
+            "/showcases/ecological-hut/Scene-111_upscale01-gigapixel-text-shapes-2x.png",
+            "/showcases/ecological-hut/bea009a9ba823df435859813b5b9db09xbarp-gigapixel-text-shapes-2x.png"
         ],
         timeline: []
     }
@@ -253,7 +266,7 @@ export const maps: MapItem[] = [
         title: "Hay Al Wafa",
         description: "Interactive 3D viewing experience for the Hay Al Wafa project.",
         url: "https://hay-alwafa.voom.cc/",
-        thumbnail: "/wafa cover .PNG"
+        thumbnail: "/wafa-cover.png"
     },
     {
         id: "factories-map",
@@ -263,20 +276,35 @@ export const maps: MapItem[] = [
         thumbnail: "/factories-cover.png"
     },
     {
-        id: "majarra-residence",
-        title: "Majarra Residence",
-        description: "Interactive 3D viewing experience for the Majarra Residence project.",
-        url: "https://majarra.voom.cc/",
-        thumbnail: "/majarah cover.jpeg"
-    },
-    {
         id: "zomra-east",
         title: "Zomra East",
         description: "Comprehensive masterplan and interactive view of Zomra East.",
         url: "https://zomramap.opetstudios.com/",
-        thumbnail: "/zomra.PNG"
+        thumbnail: "/zomra-cover.png"
+    },
+    {
+        id: "sahara-city",
+        title: "Sahara City",
+        description: "Expansive desert-scale masterplan and residential layout.",
+        url: "https://factoriesmap.opetstudios.com/",
+        thumbnail: "/sahara-cover.png"
+    },
+    {
+        id: "majarah-compound",
+        title: "Majarah Compound",
+        description: "Modern gated community layout and architectural design.",
+        url: "https://factoriesmap.opetstudios.com/",
+        thumbnail: "/majarah-cover.jpeg"
+    },
+    {
+        id: "nebu-administrative",
+        title: "Nebu Administrative",
+        description: "Gold-inspired commercial and business hub masterplan.",
+        url: "https://factoriesmap.opetstudios.com/",
+        thumbnail: "/nebu-cover.jpeg"
     }
 ];
+
 export interface TourItem {
     id: string;
     title: string;
@@ -308,3 +336,4 @@ export const tours: TourItem[] = [
         thumbnail: "/tours/factory.png"
     }
 ];
+
