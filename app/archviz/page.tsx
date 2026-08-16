@@ -78,9 +78,9 @@ export default function ArchvizPage() {
                 videos={[
                     { url: "https://www.youtube.com/watch?v=TQho13xoSyk", title: "Opet Cinematic Production" },
                     { url: "https://www.youtube.com/watch?v=Y4dSXUS1kRc", title: "Opet Showreel" },
-                    { url: "https://www.youtube.com/watch?v=7MjqpCLiozo", title: "Nebu New Capital", thumbnail: "/nebu cover.jpeg" },
-                    { url: "https://drive.google.com/file/d/1p13p-WqgiNSXkS6XS9hSGug27H5vUbtr/view?usp=drive_link", title: "Zomra Project", thumbnail: "/zomra cover.PNG" },
-                    { url: "https://www.youtube.com/watch?v=aA_chQ69WlM", title: "Sahara Project", thumbnail: "/sahara cover.PNG" }
+                    { url: "https://www.youtube.com/watch?v=7MjqpCLiozo", title: "Nebu New Capital", thumbnail: "/nebu-cover.jpeg" },
+                    { url: "https://drive.google.com/file/d/1p13p-WqgiNSXkS6XS9hSGug27H5vUbtr/view?usp=drive_link", title: "Zomra Project", thumbnail: "/zomra-cover.png" },
+                    { url: "https://www.youtube.com/watch?v=aA_chQ69WlM", title: "Sahara Project", thumbnail: "/sahara-cover.png" }
                 ]} 
             />
 

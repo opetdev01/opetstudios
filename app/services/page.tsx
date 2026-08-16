@@ -22,7 +22,7 @@ export default async function ServicesPage() {
         console.error(e);
     }
 
-    const services = sanityServices?.length > 0 ? [...sanityServices, ...mockServicesList] : mockServicesList;
+    const services = mockServicesList;
 
     return (
         <main className="min-h-screen bg-void text-white pt-32 pb-20 px-4 md:px-8">

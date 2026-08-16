@@ -12,76 +12,63 @@ export interface Service {
 
 export const servicesList: Service[] = [
     {
-        id: "lens",
-        title: "OPET LENS",
-        subtitle: "Creative Direction & Visualization",
-        mainText: "Visualizing architecture projects doesn't stop at still images. To truly <span class='text-white font-bold'>capture</span> the <span class='text-white font-bold'>feel</span> of the <span class='text-white font-bold'>masses</span>, the <span class='text-white font-bold'>experience</span> within the <span class='text-white font-bold'>spaces</span>, & <span class='text-white font-bold'>visually communicate</span> your <span class='text-white font-bold'>project</span>, you got to bring in professional <span class='text-white font-bold'>video production</span> into the mix, with <span class='text-white font-bold'>OPET</span> Lens.",
+        id: "essential",
+        title: "ESSENTIAL",
+        subtitle: "Establish dominance with a robust digital presence.",
+        mainText: "Designed for agile projects or developers looking to establish a strong, modern online sales foundation.",
         features: [
             {
-                title: "Story boards",
-                description: "Building a visual narrative for the project, its design process, structuring the video timeline, synchronized with audio, to unfold the story behind it."
+                title: "Web Sales App",
+                description: "The complete Online Interactive Sales Solution."
             },
             {
-                title: "An arsenal of 3D softwares",
-                description: "From video renders, to camera compositions, carefully selected materials & textures, adjusting lighting & environment, incorporating secondary visual assets into the mix to accentuate the selling points of the project & bring it to life."
-            },
-            {
-                title: "Montage & post production",
-                description: "Orchestrating all of it. Carefully composing the material produced, applying final tweaks in color grading & layers of effects and adjustments, along with underlaying soundeffects, to produce a cinematic work of art that suits your project & facilitate a smooth showcase of it."
+                title: "5 Hero Renders",
+                description: "Premium Archviz stills to populate the app and marketing channels."
             }
         ],
-        icon: "lens"
+        icon: "monitor"
     },
     {
-        id: "dive",
-        title: "OPET DIVE",
-        subtitle: "Immersive Experiences",
-        mainText: "With rapid advancements in the realm of <span class='text-white font-bold'>Augmented</span> & <span class='text-white font-bold'>Virtual Reality</span>, AR & <span class='text-white font-bold'>VR</span>, projects of all different scopes can definitley tap into its potential, giving users a <span class='text-white font-bold'>hands on immersive experience</span> & benefit from various unique features that this technology provides, with <span class='text-white font-bold'>OPET</span> Dive.",
+        id: "showroom-experience",
+        title: "SHOWROOM EXPERIENCE",
+        subtitle: "Bring the digital into the physical world.",
+        mainText: "Designed for major developments utilizing a physical sales center, providing agents with the ultimate closing tools.",
         features: [
             {
-                title: "Hands-on interactivity",
-                description: "Walk inside your unbuilt spaces in 1:1 real-world scale, interact with finishes, adjust dynamic lighting, and feel the atmosphere prior to construction."
+                title: "Everything in Tier 1",
+                description: "(Web Sales App)."
             },
             {
-                title: "Spatial Presence",
-                description: "Engineered specifically for cutting-edge VR headsets and standalone AR glasses to deliver frictionless customer engagement."
+                title: "Offline Interactive Showroom Solution",
+                description: "Custom software/hardware setup for the sales center."
+            },
+            {
+                title: "10 Hero Renders",
+                description: "(5 additional shots added to the Tier 1 package) for comprehensive visual coverage."
             }
         ],
-        icon: "dive"
+        icon: "harddrive"
     },
     {
-        id: "realm",
-        title: "OPET REALM",
-        subtitle: "Interactive 3D Virtual Worlds",
-        mainText: "Step into your masterplans before ground is broken. <span class='text-white font-bold'>OPET REALM</span> crafts real-time interactive 3D virtual worlds powered by Unreal Engine 5 with photorealistic shaders, daylight simulation, and live unit selection.",
+        id: "ultimate-immersion",
+        title: "ULTIMATE IMMERSION",
+        subtitle: "The peak of the interactive sales ecosystem.",
+        mainText: "Designed for flagship, luxury, or mega-developments requiring the absolute highest level of emotional engagement and cutting-edge reality technology.",
         features: [
             {
-                title: "Real-time Exploration",
-                description: "Unrestricted free-roam navigation across expansive architectural masterplans with instant unit availability filtering."
+                title: "Everything in Tier 1 & 2",
+                description: "(Web App + Offline Showroom + 10 Hero Renders)."
             },
             {
-                title: "Dynamic Atmosphere",
-                description: "Simulate exact geographic daylight, weather transitions, and realistic sunset views from any specific balcony or penthouse."
-            }
-        ],
-        icon: "realm"
-    },
-    {
-        id: "pulse",
-        title: "OPET PULSE",
-        subtitle: "Cloud-Streamed Visual Experiences",
-        mainText: "Instant, zero-install 3D streaming directly in the browser on any device. <span class='text-white font-bold'>OPET PULSE</span> delivers high-fidelity architectural visualizations via ultra-low latency pixel streaming.",
-        features: [
-            {
-                title: "Zero Downloads",
-                description: "High-end Unreal Engine graphical fidelity streamed seamlessly to mobile browsers, tablets, and desktops over 5G & broadband."
+                title: "Cinematic Animation",
+                description: "Up to 2 minutes of narrative-driven architectural video."
             },
             {
-                title: "Sales Enablement",
-                description: "Seamlessly integrate interactive unit tours into your sales presentations, CRM workflows, and live buyer consultations."
+                title: "XR Experience Integration",
+                description: "Custom AR and VR experiences fully integrated into the sales flow."
             }
         ],
-        icon: "pulse"
+        icon: "glasses"
     }
 ];
 
