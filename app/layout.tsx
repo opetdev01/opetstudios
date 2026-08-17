@@ -55,6 +55,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: [
+      { url: '/icon.png', sizes: 'any' },
+      { url: '/opet-logo.svg', type: 'image/svg+xml' },
+    ],
+    apple: [
+      { url: '/icon.png' },
+    ],
+  },
   openGraph: {
     title: 'Opet Studios | Architectural Visualization & CGI',
     description: 'Transforming unbuilt architecture into vivid, immersive visual experiences through cutting-edge CGI and interactive technology.',
