@@ -57,9 +57,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/icon.png', sizes: 'any' },
-      { url: '/opet-logo.svg', type: 'image/svg+xml' },
+      { url: '/icon.png', type: 'image/png' },
+      { url: '/favicon.ico' },
     ],
+    shortcut: '/favicon.ico',
     apple: [
       { url: '/icon.png' },
     ],
