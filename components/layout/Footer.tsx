@@ -34,8 +34,8 @@ export function Footer() {
                     </div>
                     <div>
                         <h4 className="text-white font-semibold mb-4">Contact</h4>
-                        <a href="mailto:Marketing@opetstudios.com" className="block text-gray-400 text-sm hover:text-white transition-colors">
-                            Marketing@opetstudios.com
+                        <a href="mailto:opet.social@cubeconsult.org" className="block text-gray-400 text-sm hover:text-white transition-colors">
+                            opet.social@cubeconsult.org
                         </a>
                         <a href="https://www.opetstudios.com" target="_blank" rel="noopener noreferrer" className="block text-gray-400 text-sm mt-2 hover:text-white transition-colors">
                             www.opetstudios.com

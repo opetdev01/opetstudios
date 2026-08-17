@@ -144,7 +144,7 @@ export const ContactModal = () => {
         triggerFoldSequence();
 
         try {
-            const response = await fetch('https://formsubmit.co/ajax/Marketing@opetstudios.com', {
+            const response = await fetch('https://formsubmit.co/ajax/opet.social@cubeconsult.org', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json'
